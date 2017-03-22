@@ -35,4 +35,27 @@ jQuery(document).ready(function($){
 			$('body').removeClass('overflow-hidden');
 		}
 	});
+
+
+ function marvelP(){
+    var options = {
+        id: 181083534,
+        width: 640,
+        loop: false,
+        title: false,
+        portrait: false,
+        byline: false
+    };
+    
+    var player = new Vimeo.Player('video-player', options);
+
+    player.setVolume(1);
+
+    player.on('play', function() {
+        console.log('video played');
+    });
+
+}
+
+marvelP();
 });

@@ -14,11 +14,8 @@
 
 
     var player = new Vimeo.Player('video-player', options);
-    var videoTitle = title.name (options);
 
     player.setVolume(1);
-
-   videoTitle(false);
 
     player.on('play', function() {
         console.log('video played');
