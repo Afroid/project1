@@ -12,7 +12,6 @@
         byline: false
     };
 
-
     var player = new Vimeo.Player('video-player', options);
 
     player.setVolume(1);
