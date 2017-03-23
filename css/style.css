@@ -606,7 +606,7 @@ xkeyframes
     transform: rotateY(180deg);
 }
 
-/*Making the video responsive*/
+/* making the video responsive*/
 .responsive-container {
     position: relative;
     padding-bottom: 56.25%;
