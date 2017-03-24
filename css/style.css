@@ -49,7 +49,7 @@ Modules - reusable parts of our design
 
 .cd-container {
     /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -58,7 +58,7 @@ Modules - reusable parts of our design
     /* clearfix */
     content: '';
     display: table;
-    clear: both;
+    clear: both;   
 }
 
 
@@ -140,6 +140,20 @@ main.slide-out .cd-overlay {
     line-height: 1.4;
 }
 
+/*not original*/
+@media only screen and (min-width: 320px) {
+    .cd-section {
+        padding: 2em;
+    }
+    .cd-section p {
+        line-height: 1.4;
+    }
+
+/*    img{
+        height: 300px;
+    }*/
+}
+
 @media only screen and (min-width: 768px) {
     .cd-section {
         padding: 4em;
@@ -147,6 +161,10 @@ main.slide-out .cd-overlay {
     .cd-section p {
         line-height: 1.6;
     }
+
+/*    img{
+        height: 300px;
+    }*/
 }
 
 @media only screen and (min-width: 1200px) {
@@ -246,7 +264,7 @@ header p {
 }
 
 #cd-team .cd-img-overlay span {
-    position: absolute;
+    position: absolute; 
     left: 50%;
     top: 50%;
     bottom: auto;
@@ -292,7 +310,7 @@ header p {
 }
 
 @media only screen and (min-width: 768px) {
-    #cd-team li {
+    #cd-team li {   
         width: 31%;
         float: left;
         margin-right: 3.5%;
@@ -552,6 +570,7 @@ xkeyframes
 
 .flip-container {
     perspective: 1000px;
+    position: relative;
 }
 
 
@@ -565,8 +584,12 @@ xkeyframes
 .flip-container,
 .front,
 .back {
-/*    width: 320px;
-    height: 480px;*/
+    width: 320px;
+    height: 480px;
+    margin:  0 auto;
+    max-width: 100%;
+    max-height: 100%;
+
 }
 
 
@@ -585,7 +608,7 @@ xkeyframes
 .back {
 /*    text-align: center;*/
     backface-visibility: hidden;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 }
@@ -605,3 +628,4 @@ xkeyframes
 .back {
     transform: rotateY(180deg);
 }
+
