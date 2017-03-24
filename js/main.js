@@ -151,8 +151,10 @@ jQuery(document).ready(function($){
 			var memberFactsDiv = $("<div id='member" + i + "Facts' class='cd-img-overlay'>");
 			anchorFigure.append(memberFactsDiv);
 
+			//Creates the facts on the back of the card with the name from the API call
+			//and an incremented number for targeting, if needed
 			for(var j=1; j<6; j++){
-				var factDiv = $("<div id='Spider-Man'>").text(theFacts + j);//Replace "Fact" with your fact from the API call here and remove "j".
+				var factDiv = $("<div id='" + name + j +"'>").text(theFacts + j);//Replace "Fact" with your fact from the API call here and remove "j".
 				memberFactsDiv.append(factDiv);
 			}
 
