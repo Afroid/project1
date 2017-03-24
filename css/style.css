@@ -606,7 +606,7 @@ xkeyframes
     transform: rotateY(180deg);
 }
 
-
+/*video player container and attributes*/
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -624,20 +624,3 @@ xkeyframes
   
 }
 
-/* making the video responsive 
-.responsive-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px; 
-    height: 0; 
-    overflow: hidden;
-}
-.responsive-container iframe,
-.responsive-container object,
-.responsive-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}*/

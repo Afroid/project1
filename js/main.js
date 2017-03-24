@@ -37,7 +37,7 @@ jQuery(document).ready(function($) {
         }
     });
 
-
+    // function for YouTube Player API
     function onYouTubePlayerAPIReady() {
     	console.log("onYouTubePlayerAPIReady");
         var players = document.querySelectorAll('.video-container div')
