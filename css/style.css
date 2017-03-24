@@ -225,14 +225,14 @@ header p {
 #cd-team li {
     margin-bottom: 2em;
     border-radius: 0.25em;
-    box-shadow: 0 0 10px rgba(92, 75, 81, 0);
+    /*box-shadow: 0 0 10px rgba(92, 75, 81, 0);*/
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 .no-touch #cd-team li:hover {
-    box-shadow: 0 0 10px rgba(92, 75, 81, 0.3);
+    /*box-shadow: 0 0 10px rgba(92, 75, 81, 0.3);*/
 }
 
 .no-touch #cd-team li:hover .cd-img-overlay {
@@ -591,6 +591,10 @@ xkeyframes
     max-height: 100%;
 
 }
+/*
+.flip-container{
+    min-height: 100%;
+}*/
 
 
 /* flip speed goes here */
