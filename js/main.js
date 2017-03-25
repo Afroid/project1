@@ -3,8 +3,8 @@ jQuery(document).ready(function($){
 	var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
 
 	//open team-member bio
-	$(document).on('click', '.back', function(event){
-	// $('#cd-team').find('ul a').on('click', function(event) {
+	// $(document).on('click', '.back', function(event){
+	$('#cd-team').find('ul a').on('click', function(event) {
 		console.log("Clicked in the first");
 		event.preventDefault();
 		var selected_member = $(this).data('type');
