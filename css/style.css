@@ -1,8 +1,3 @@
-/* -------------------------------- 
-
-Primary style
-
--------------------------------- */
 
 html * {
     -webkit-font-smoothing: antialiased;
@@ -182,7 +177,12 @@ main.slide-out .cd-overlay {
 }
 
 header {
-    background: #f2ecbd;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, red, rgba(0, 0, 0, 0), blue);
+    background: -o-linear-gradient(90deg, red, rgba(0, 0, 0, 0), blue);
+    background: -moz-linear-gradient(90deg, red, rgba(0, 0, 0, 0), blue);
+    background: linear-gradient(90deg, blue, rgba(0, 0, 0, 0), red);
+    box-shadow: inset 0px -20px 88px white;   
 }
 
 header h1 {
@@ -192,13 +192,15 @@ header h1 {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: .4em;
-    color: #3e380c;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkblue
 }
 
 header p {
     font-size: 13px;
     font-size: 0.8125rem;
-    color: #93861d;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 10px darkred
 }
 
 .cd-placeholder-1 {
@@ -211,7 +213,12 @@ header p {
 }
 
 #cd-team {
-    background: #8abeb2;
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, white, rgba(255, 0, 0, 1), blue);
+    background: -o-linear-gradient(-90deg, red, rgba(0, 0, 0, 0), blue);
+    background: -moz-linear-gradient(-90deg, red, rgba(0, 0, 0, 0), blue);
+    background: linear-gradient(-90deg, red, rgba(0, 0, 0, 0), blue);   
+    box-shadow: inset 0px 20px 88px white;
 }
 
 #cd-team .cd-container {
@@ -219,7 +226,8 @@ header p {
 }
 
 #cd-team h2 {
-    color: #1a2f2a;
+    color: white;
+    text-shadow: 3px 3px 2px black, 0 0 25px white, 0 0 10px darkred
 }
 
 #cd-team li {
@@ -491,7 +499,7 @@ header p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(138, 190, 178, 0.8);
+    background: rgba(48, 58, 109, 0.6);
     cursor: pointer;
     display: none;
 }
@@ -652,6 +660,12 @@ xkeyframes
     left: 0;
     width: 100%;
     height: 100%;
-  
+}
+
+.facts{
+    color: white;
+    margin: 4%;
+    font-size: 18px;
+    font-size: 1.125rem;
 }
 
